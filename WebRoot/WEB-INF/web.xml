@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>student_manager_system</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 配置servlet -->
+  
+    <servlet>
+  	<!-- 用户登陆验证的servlet -->
+  	<servlet-name>exit_msg</servlet-name>
+  	<servlet-class>servlet.exitServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>exit_msg</servlet-name>
+  	<url-pattern>/servlet/exitServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<!-- 用户登陆验证的servlet -->
+  	<servlet-name>dologinservlet</servlet-name>
+  	<servlet-class>servlet.dologinServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>dologinservlet</servlet-name>
+  	<url-pattern>/servlet/dologinServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<!-- 用户登陆验证的servlet -->
+  	<servlet-name>Choose_FacultyServlet_register</servlet-name>
+  	<servlet-class>servlet.Choose_FacultyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Choose_FacultyServlet_register</servlet-name>
+  	<url-pattern>/servlet/Choose_FacultyServlet</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<!-- 用户登陆验证的servlet -->
+  	<servlet-name>doResgisterServlet</servlet-name>
+  	<servlet-class>servlet.DoResgisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>doResgisterServlet</servlet-name>
+  	<url-pattern>/servlet/DoResgisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    	<!-- 用户登陆验证的servlet -->
+    <servlet>
+  <servlet-name>change_ResgisterServlet</servlet-name>
+  	<servlet-class>servlet.Change_ResgisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>change_ResgisterServlet</servlet-name>
+  	<url-pattern>/servlet/Change_ResgisterServlet</url-pattern>
+  </servlet-mapping>
+
+
+    	<!-- 用户登陆验证的servlet -->
+    <servlet>
+  <servlet-name>dotransactionServlet</servlet-name>
+  	<servlet-class>servlet.DotransactionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>dotransactionServlet</servlet-name>
+  	<url-pattern>/servlet/DotransactionServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>change_TransactionServlet</servlet-name>
+  	<servlet-class>servlet.Change_TransactionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>change_TransactionServlet</servlet-name>
+  	<url-pattern>/servlet/Change_TransactionServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+     <servlet>
+  <servlet-name>Student_base_infoServlet</servlet-name>
+  	<servlet-class>servlet.DoStudent_base_infoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Student_base_infoServlet</servlet-name>
+  	<url-pattern>/servlet/DoStudent_base_infoServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+       <servlet>
+  <servlet-name>doClass_base_info</servlet-name>
+  	<servlet-class>servlet.DoClass_base_info</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>doClass_base_info</servlet-name>
+  	<url-pattern>/servlet/DoClass_base_info</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    
+       <servlet>
+  <servlet-name>do_ScoreServlet</servlet-name>
+  	<servlet-class>servlet.Do_ScoreServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>do_ScoreServlet</servlet-name>
+  	<url-pattern>/servlet/Do_ScoreServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+         <servlet>
+  <servlet-name>change_ScoreServlet</servlet-name>
+  	<servlet-class>servlet.Change_ScoreServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>change_ScoreServlet</servlet-name>
+  	<url-pattern>/servlet/Change_ScoreServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+           <servlet>
+  <servlet-name>add_AwardingServlet</servlet-name>
+  	<servlet-class>servlet.Add_AwardingServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>add_AwardingServlet</servlet-name>
+  	<url-pattern>/servlet/Add_AwardingServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+             <servlet>
+  <servlet-name>add_punishServlet</servlet-name>
+  	<servlet-class>servlet.Add_punishServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>add_punishServlet</servlet-name>
+  	<url-pattern>/servlet/Add_punishServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+               <servlet>
+  <servlet-name>add_CheckServlet</servlet-name>
+  	<servlet-class>servlet.Add_CheckServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>add_CheckServlet</servlet-name>
+  	<url-pattern>/servlet/Add_CheckServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    
+               <servlet>
+  <servlet-name>delete_studentServlet</servlet-name>
+  	<servlet-class>servlet.Delete_studentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>delete_studentServlet</servlet-name>
+  	<url-pattern>/servlet/Delete_studentServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
