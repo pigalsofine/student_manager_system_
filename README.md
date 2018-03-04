@@ -44,3 +44,4 @@
 		体检情况
 			查询体检信息（按专业显示，已体检人数，未体检人数-可查询都有谁）；
 			插入体检信息（可批量插入数据）。
+![Alt text](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
